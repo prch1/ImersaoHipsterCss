@@ -1,0 +1,42 @@
+body{ 
+ background-image:url('https://mcdn.wallpapersafari.com/medium/81/75/eYl5Rw.jpg');
+ font-family:Arial;
+ background-size: 100vw 100vh;
+
+}
+
+.menu{
+  background-color:pink;
+}
+
+.menu li{
+  list-style:none;
+}
+
+.menu ul{
+  display:flex;
+  justify-content: space-around;
+}
+
+.menu a{
+  text-emphasis: circle;  
+   color: #8A2BE2	;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.site-subtitle,
+.site-title{
+  text-align:center;
+  color:yellow;
+}
+
+.site-subtitle{
+  font-style:italic;
+}
