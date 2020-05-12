@@ -1,18 +1,18 @@
 body{ 
  
- background-image:url('https://lh3.googleusercontent.com/rkCwGm4upNBcfGEIIY6foSrqjfF_CKL4BxdkqfbuvzmXAAlG8lia0DMYbab-lMhNin3Qb-XK4cI=w640-h400-e365');
+ background-image:url('https://image.freepik.com/vetores-gratis/fundo-moderno-horizonte-da-cidade_77417-791.jpg');
  font-family:Arial;
  background-size: 100vw 100vh;
 
 }
 
 img{
-  opacity: 0.80;
-  filter: saturate(15%)
+  opacity: 0.3;
+  filter: saturate(50%)
 }
 
 .menu{
-  background-color:pink;
+  background-color:#87CEEB;
 }
 
 .menu li{
@@ -40,7 +40,7 @@ a:hover{
 .site-subtitle,
 .site-title{
   text-align:center;
-  color:yellow;
+  color:#FF1493;
 }
 
 .site-subtitle{
