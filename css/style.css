@@ -120,14 +120,13 @@ font-size: 2em;
 
 .sessao-portfolio figure{
   text-align: center;
+  padding:8px;
 }
 
 @media(min-width: 445px){
 .sessao-portfolio .grid{
   grid-template-columns: 180px 180px;
 }
-
-
 }
 
 @media(min-width: 768px){
