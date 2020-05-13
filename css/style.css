@@ -126,9 +126,20 @@ font-size: 2em;
 .sessao-portfolio .grid{
   grid-template-columns: 180px 180px;
 }
+
+
 }
 
+@media(min-width: 768px){
+  .sessao-portfolio .grid{
+    display: flex;
+    grid-template-columns: repeat(3,180px);
+    justify-content: center;
+    align-content: center;
+  }
+}
 
+/*
 @media(min-width: 768px){
   .sessao-portfolio .grid{
     grid-template-columns: repeat(3,180px);
@@ -137,14 +148,12 @@ font-size: 2em;
     height: calc(100vh - 8em - 48px);
   }
   }
-
- 
-
 @media(min-width: 768px){
   .sessao-portfolio .grid{
     display: flex;
-   /* grid-template-columns: 180px 180px 180px;*/
+   /* grid-template-columns: 180px 180px 180px;
     justify-content: center;
   }
   }
+  */
   
