@@ -70,6 +70,12 @@ header{
    color: #8A2BE2	;
    display: block;
    padding: 10px 15px;
+   transition: 2s;
+}
+
+.menu a:hover{
+  background-color:purple;
+  color:white;
 }
 
 a{
@@ -95,22 +101,30 @@ a:hover{
   height: 180px;
   width: 240px;
   object-fit: cover;
-
+  transition: transform 500ms;
 }
+
+.img-portfolio:hover{
+  transform: scale(1.8);
+}
+
+
 .outra-fonte,
 .site-title{
   font-family: 'Monoton', cursive;
 }
 
+.contato,
 .sessao-portfolio{
 background-color: #ADD8E6;
 padding: 2em;
+min-height: 100vh;
 }
 
+.contato,
 .sessao-portfolio h2{
 margin-bottom: 0.7em;
 color: #FF00FF	;
-font-size: 2em;
 }
 
 .sessao-portfolio .grid{
@@ -135,24 +149,21 @@ font-size: 2em;
     grid-template-columns: repeat(3,180px);
     justify-content: center;
     align-content: center;
+    padding:150px;
   }
 }
 
-/*
-@media(min-width: 768px){
-  .sessao-portfolio .grid{
-    grid-template-columns: repeat(3,180px);
-    justify-content: center;
-    align-content: center;
-    height: calc(100vh - 8em - 48px);
-  }
-  }
-@media(min-width: 768px){
-  .sessao-portfolio .grid{
-    display: flex;
-   /* grid-template-columns: 180px 180px 180px;
-    justify-content: center;
-  }
-  }
-  */
+.contato a {
+  color:#FF69B4;
+  font-size: 4em;
+}
+
+.contato .icons{
+  text-align: center;
+}
   
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 7px 0px 10px yellow;
+  transition: 2s;
+}
