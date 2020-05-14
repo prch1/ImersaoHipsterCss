@@ -101,12 +101,20 @@ a:hover{
   height: 180px;
   width: 240px;
   object-fit: cover;
-  transition: transform 500ms;
+  transition: transform 500ms ;
 }
 
 .img-portfolio:hover{
   transform: scale(1.8);
+  transform: scale(1.8) ;
 }
+
+/*
+.img-portfolio:hover{
+  transform: scale(1.8);
+  transform: scale(1.8) rotate(-2deg);
+}
+*/
 
 
 .outra-fonte,
@@ -164,6 +172,25 @@ color: #FF00FF	;
   
 .contato a:hover{
   text-decoration: none;
-  text-shadow: 7px 0px 10px yellow;
+  text-shadow: 10px 0px 10px yellow;
   transition: 2s;
 }
+
+.titulo{
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo{
+
+    from{
+        transform: scale(0.2) translateY(50vh);
+        opacity: 0;
+    }
+    to{
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+}
+
