@@ -12,6 +12,7 @@ body{
  font-family:Arial;
  height: 100vh;
  font-size: 12px;
+ background-color:#87CEEB;
 }
 
 
@@ -122,17 +123,57 @@ a:hover{
   font-family: 'Monoton', cursive;
 }
 
+.sobre,
 .contato,
 .sessao-portfolio{
 background-color: #ADD8E6;
 padding: 2em;
 min-height: 100vh;
+
 }
 
-.contato,
+
+@media(min-width:1200px){
+  .container{
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;   
+  }
+}
+
+
+.sobre h2,
+.contato h2 ,
 .sessao-portfolio h2{
 margin-bottom: 0.7em;
 color: #FF00FF	;
+font-size: 2em;;
+}
+
+.sobre .avatar img{
+  border-radius: 50%;
+  size: 1em;
+}
+
+
+.sobre p {
+  color:darkblue;
+  text-indent: 1.4em;
+  margin-bottom: 1.4em;
+  text-align: justify;
+}
+
+.sobre a{
+   color:palevioletred;
+}
+.sobre a:hover{
+   background-color:rebeccapurple;
+   color:white;
+}
+
+.sobre .avatar{
+  float:right;
+  margin-left: 1em;
 }
 
 .sessao-portfolio .grid{
