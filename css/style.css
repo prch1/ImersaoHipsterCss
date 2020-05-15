@@ -152,7 +152,9 @@ font-size: 2em;;
 
 .sobre .avatar img{
   border-radius: 50%;
-  size: 1em;
+  height: 250px;
+  width: 250px;
+  clip-path: polygon(50% 0%,100% 25%,100% 75%,47% 100%,0% 75%, 0% 25%);
 }
 
 
@@ -220,7 +222,7 @@ font-size: 2em;;
 .titulo{
   transform: scale(0.2) translateY(50vh);
   opacity: 0;
-  animation: linear 2s animacaoTitulo forwards;
+  animation: linear 1s animacaoTitulo forwards;
 }
 
 @keyframes animacaoTitulo{
@@ -234,4 +236,40 @@ font-size: 2em;;
       opacity: 1;
     }
 }
+
+
+.flip-card {
+  height: 180px;
+  perspective: 1000px;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
 
